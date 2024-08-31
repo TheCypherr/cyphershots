@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, "Noto Sans";
+  font-size: 1rem;
+  color: #fffedf;
+  background-color: #000000ea;
+}
+.hero-wrapper {
+  padding: 10px 15px 10px 15px;
+  height: 100%;
+}
+.hero-wrapper h1 {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  font-size: 4.5rem;
+  line-height: 85px;
+  color: #dfba69;
+}
+.hero-wrapper span {
+  color: #fffedf;
+}

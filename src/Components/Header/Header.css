@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, "Noto Sans";
+  font-size: 1rem;
+  color: #fffedf;
+  background-color: #000000ea;
+}
+.h-wrapper {
+  padding: 10px 30px 10px 30px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-link1 {
+  text-decoration: none;
+  color: #fff;
+}
+.h-one h3 {
+  color: #dfba69;
+  cursor: pointer;
+}
+.h-one h3:hover {
+  color: #cf9c2c;
+}
+.h-two {
+  display: flex;
+}
+.custom-links {
+  padding-left: 50px;
+  text-decoration: none;
+  color: #fff;
+}
