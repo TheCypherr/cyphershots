@@ -55,15 +55,15 @@ const HomeGallery = () => {
 
       <div className="picture-container">
         {homePics[currentPicture].map((pic) => (
-          <div key={pic.id} className="main-container">
-            {console.log(`IbadanDetails/${pic.id}`)}
-            <Link to={`/IbadanDetails/${pic.id}`}>
+          <Link to={`${pic.link}/${pic.id}`}>
+            <div key={pic.id} className="main-container">
+              {/* {console.log(`${pic.link}/${pic.id}`)} */}
               <img src={pic.image} alt={pic.name} />
-            </Link>
-            <div className="overlay">
-              <div className="overlay-content"></div>
+              <div className="overlay">
+                <div className="overlay-content"></div>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

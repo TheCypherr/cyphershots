@@ -31,3 +31,8 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+.theme-icon {
+  margin-left: 50px;
+  margin-top: 20px;
+}
