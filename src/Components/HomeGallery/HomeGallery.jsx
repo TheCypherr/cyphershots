@@ -60,7 +60,9 @@ const HomeGallery = () => {
               {/* {console.log(`${pic.link}/${pic.id}`)} */}
               <img src={pic.image} alt={pic.name} />
               <div className="overlay">
-                <div className="overlay-content"></div>
+                <div>
+                  <p className="overlay-content">See more...</p>
+                </div>
               </div>
             </div>
           </Link>

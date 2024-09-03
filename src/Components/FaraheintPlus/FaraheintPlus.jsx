@@ -4,7 +4,7 @@ import { PictureContext } from "../../utils/PictureContext";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { sliderSettings } from "../../utils/Common";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const FaraheintPlus = () => {
   // Access homePics from context
@@ -45,16 +45,17 @@ const FaraheintPlus = () => {
         <div className="flex-container2">
           <h1>Lifestyle Photography</h1>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            quasi quisquam eum rem similique accusamus, ut placeat maiores
-            pariatur deserunt et qui at porro maxime vel illum quas blanditiis?
-            Esse mollitia incidunt ipsa fugiat eius eos a perspiciatis corporis
-            fugit eaque inventore quis suscipit obcaecati deleniti, illum amet
-            illo maxime, earum, voluptates exercitationem debitis ratione in ut
-            nemo. Veritatis illo, reprehenderit quidem, optio consequuntur
-            eveniet corrupti sed vero exercitationem eaque officia illum minus
-            tenetur ducimus explicabo eius aliquid non necessitatibus?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+            aliquam libero incidunt voluptate minus corrupti. Suscipit odio
+            molestiae minus nam, perspiciatis rem explicabo molestias ipsam
+            libero accusamus repellat iusto iste alias in ea dolore aut magni
+            quasi dicta. Repellat, dolorem!
           </h3>
+          <div className="r-btn">
+            <Link to="/">
+              <button>&lt; Back</button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

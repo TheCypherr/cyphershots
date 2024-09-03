@@ -4,7 +4,7 @@ import { PictureContext } from "../../utils/PictureContext";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { sliderSettings } from "../../utils/Common";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Victony = () => {
   // Access homePics from context
@@ -45,16 +45,17 @@ const Victony = () => {
         <div className="flex-container2">
           <h1>Island Block Party ft Bella Shmurda</h1>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            quasi quisquam eum rem similique accusamus, ut placeat maiores
-            pariatur deserunt et qui at porro maxime vel illum quas blanditiis?
-            Esse mollitia incidunt ipsa fugiat eius eos a perspiciatis corporis
-            fugit eaque inventore quis suscipit obcaecati deleniti, illum amet
-            illo maxime, earum, voluptates exercitationem debitis ratione in ut
-            nemo. Veritatis illo, reprehenderit quidem, optio consequuntur
-            eveniet corrupti sed vero exercitationem eaque officia illum minus
-            tenetur ducimus explicabo eius aliquid non necessitatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae non
+            quod, repellat animi exercitationem quisquam alias nemo doloribus!
+            Error magnam provident vero totam cupiditate atque nihil sequi animi
+            est, consectetur iure, nam vitae quasi fuga velit veniam alias
+            dicta.
           </h3>
+          <div className="r-btn">
+            <Link to="/">
+              <button>&lt; Back</button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

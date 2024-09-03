@@ -3,25 +3,27 @@ body {
   padding: 0px;
   font-family: Arial, "Noto Sans";
   font-size: 1rem;
-  color: #fffedf;
-  background-color: #000000ea;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 .h-wrapper {
   padding: 10px 30px 10px 30px;
   height: 90px;
+}
+.inner-h {
   display: flex;
   justify-content: space-between;
 }
 .custom-link1 {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 .h-one h3 {
-  color: #dfba69;
+  color: var(--orange-color);
   cursor: pointer;
 }
 .h-one h3:hover {
-  color: #cf9c2c;
+  color: var(--orange-hover);
 }
 .h-two {
   display: flex;
@@ -29,10 +31,82 @@ body {
 .custom-links {
   padding-left: 50px;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
+}
+.custom-links-new {
+  padding-left: 50px;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .theme-icon {
+  cursor: pointer;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 22px;
+}
+.icons {
+  display: none;
+}
+.icon-menu {
+  display: none;
+}
+.theme-icon-two {
+  display: none;
+}
+
+/* Portrait View Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: small;
+  }
+  .h-wrapper {
+    padding: 5px 20px 10px 20px;
+  }
+  .icons {
+    display: flex;
+  }
+  .icon-menu {
+    display: block;
+    margin-top: 24px;
+    margin-left: 20px;
+  }
+  .h-one h3 {
+    font-size: 1.2rem;
+  }
+  .theme-icon-two {
+    cursor: pointer;
+    display: block;
+    margin-top: 25px;
+  }
+  .h-two {
+    display: none;
+  }
+  .inner-h {
+    display: flex;
+    position: relative;
+    transition: height 0.3s ease, margin-bottom 0.3s ease;
+  }
+  .h-two-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    position: absolute;
+    top: 50px; /* Adjust based on your menu icon position */
+    left: 33%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+  }
+  .menu-open {
+    height: auto;
+    margin-bottom: 200px; /* Adjust this value based on the dropdown height */
+  }
+  .custom-links-new {
+    margin-bottom: -40px;
+    font-size: 1.2rem;
+    text-align: left;
+    align-content: end;
+    color: var(--text-color);
+  }
 }

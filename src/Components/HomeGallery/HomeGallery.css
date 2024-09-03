@@ -3,8 +3,8 @@ body {
   padding: 0px;
   font-family: Arial, "Noto Sans";
   font-size: 1rem;
-  color: #fffedf;
-  background-color: #000000ea;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 .hgallery-wrapper {
   padding: 10px 15px 10px 15px;
@@ -25,20 +25,20 @@ body {
   font-weight: bold;
   cursor: pointer;
   /* margin-right: 100px; */
-  color: #dfba69;
+  color: var(--orange-color);
 }
 .btn .activeColor {
-  color: #dfba69;
+  color: var(--orange-color);
 }
 .btn .activeColor:hover {
-  color: #cf9c2c;
+  color: var(--orange-hover);
   text-decoration: underline;
 }
 .btn .inactiveColor {
-  color: #fffedf;
+  color: var(--text-color);
 }
 .btn .inactiveColor:hover {
-  color: #cf9c2c;
+  color: var(--orange-hover);
   text-decoration: underline;
 }
 .main-container {
@@ -57,8 +57,21 @@ body {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+.overlay-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fffedf;
+}
+.overlay:hover .overlay-content {
+  opacity: 1;
+}
 .main-container:hover .overlay {
-  background-color: #dc354540;
+  background-color: var(--bg-overlay);
   cursor: pointer;
 }
 .main-container img {
@@ -68,4 +81,40 @@ body {
 }
 .main-container:hover img {
   transform: scale(1.1);
+}
+
+/* Portrait View Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: small;
+  }
+  .hgallery-wrapper {
+    padding: 10px 15px 10px 15px;
+  }
+  .picture-container {
+    display: grid;
+    /* 3 items per row is the code below */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 0;
+  }
+  .btn button {
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-right: 100px; */
+    color: var(--orange-color);
+  }
+  .overlay-content {
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+  }
+  .overlay:hover .overlay-content {
+    opacity: 1;
+  }
 }

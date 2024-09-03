@@ -4,7 +4,7 @@ import { PictureContext } from "../../utils/PictureContext";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { sliderSettings } from "../../utils/Common";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const IbadanDetails = () => {
   // Access homePics from context
@@ -45,16 +45,17 @@ const IbadanDetails = () => {
         <div className="flex-container2">
           <h1>Photography Content in Ibadan</h1>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            quasi quisquam eum rem similique accusamus, ut placeat maiores
-            pariatur deserunt et qui at porro maxime vel illum quas blanditiis?
-            Esse mollitia incidunt ipsa fugiat eius eos a perspiciatis corporis
-            fugit eaque inventore quis suscipit obcaecati deleniti, illum amet
-            illo maxime, earum, voluptates exercitationem debitis ratione in ut
-            nemo. Veritatis illo, reprehenderit quidem, optio consequuntur
-            eveniet corrupti sed vero exercitationem eaque officia illum minus
-            tenetur ducimus explicabo eius aliquid non necessitatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            aliquid amet beatae recusandae nihil cumque architecto, quisquam
+            odit atque id iusto magnam. Ipsum eaque consectetur, aperiam
+            molestiae facilis est quidem at sapiente, laudantium numquam
+            accusamus totam voluptatibus molestias iusto laborum?
           </h3>
+          <div className="r-btn">
+            <Link to="/">
+              <button>&lt; Back</button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

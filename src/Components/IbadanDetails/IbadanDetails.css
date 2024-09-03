@@ -3,8 +3,8 @@ body {
   padding: 0px;
   font-family: Arial, "Noto Sans";
   font-size: 1rem;
-  color: #fffedf;
-  background-color: #000000ea;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 .gallery-wrapper {
   padding: 0px 80px 0px 80px;
@@ -65,19 +65,78 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   padding: 0.2rem 0.8rem;
-  color: #fff;
+  color: var(--text-color);
   border: none;
   border-radius: 5px;
-  background-color: #000000ea;
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 .r-buttons > :nth-child(1) {
   margin-left: 100px;
   margin-right: 30px;
-  box-shadow: 0px 0px 5px #fffedf;
+  box-shadow: 0px 0px 5px var(--text-color);
 }
 .r-buttons > :nth-child(2) {
   margin-right: 100px;
   margin-left: 30px;
-  box-shadow: 0px 0px 5px #fffedf;
+  box-shadow: 0px 0px 5px var(--text-color);
+}
+.r-btn button {
+  float: right;
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 5px var(--text-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px 8px 5px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Portrait View Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: small;
+  }
+  .gallery-wrapper {
+    padding: 50px 15px 50px 15px;
+    height: 100%;
+  }
+  .inner-gallery {
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-container1 {
+    text-align: center;
+    align-items: center;
+  }
+  .related-images {
+    margin: auto;
+    width: 25rem;
+    height: 27rem;
+    text-align: center;
+    align-items: center;
+  }
+  .r-buttons > :nth-child(1) {
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  .r-buttons > :nth-child(2) {
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+  .flex-container2 h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .flex-container2 h3 {
+    margin-top: -10px;
+  }
+  .r-buttons {
+    margin-top: 30px;
+  }
 }
