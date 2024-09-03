@@ -246,7 +246,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 2,
+        id: 3,
         image: "/feran0.jpg",
         link: "/Faraheint",
         relatedImages: [
@@ -268,7 +268,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 3,
+        id: 4,
         image: "/cynthia5.jfif",
         link: "/Ceci",
         relatedImages: [
@@ -290,7 +290,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 4,
+        id: 5,
         image: "/feran3.jfif",
         link: "/FaraheintPlus",
         relatedImages: [
@@ -309,7 +309,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 5,
+        id: 7,
         image: "/OOU0.jpg",
         link: "/OouStreet1",
         relatedImages: [
@@ -325,7 +325,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 6,
+        id: 4,
         image: "/cynthia6.jfif",
         link: "/Ceci",
         relatedImages: [
@@ -351,7 +351,7 @@ export default function HomePicData() {
     // Celebrities Photography
     celebrities: [
       {
-        id: 1,
+        id: 2,
         image: "/energy1.jfif",
         link: "/BlockParty",
         relatedImages: [
@@ -364,7 +364,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 2,
+        id: 6,
         image: "/bella33.jfif",
         link: "/Bella",
         relatedImages: [
@@ -383,7 +383,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 3,
+        id: 8,
         image: "/poco1.jfif",
         link: "/Pocolee",
         relatedImages: [
@@ -402,7 +402,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 4,
+        id: 10,
         image: "/victony1.jfif",
         link: "/Victony",
         relatedImages: [
@@ -421,7 +421,7 @@ export default function HomePicData() {
         ],
       },
       {
-        id: 5,
+        id: 12,
         image: "/tizzy1.jfif",
         link: "/Tizzy",
         relatedImages: [
