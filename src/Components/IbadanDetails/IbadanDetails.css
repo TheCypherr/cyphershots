@@ -141,7 +141,7 @@ body {
 }
 
 /* Landscape and iPad View */
-@media (min-width: 750px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .gallery-wrapper {
     padding: 20px 15px 20px 15px;
     height: 100%;
@@ -157,11 +157,12 @@ body {
     margin-top: -10px;
   }
   .related-images {
-    width: 25rem;
-    height: 28rem;
+    width: 22rem;
+    height: 25rem;
+    margin-right: 10px;
   }
 }
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .gallery-wrapper {
     padding: 50px 15px 50px 15px;
     height: 100%;

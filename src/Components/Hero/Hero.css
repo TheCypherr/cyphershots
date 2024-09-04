@@ -39,17 +39,17 @@ body {
   }
 }
 /* Landscape and iPad View */
-@media (min-width: 750px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .hero-wrapper h1 {
     font-size: 2.8rem;
     line-height: 50px;
     padding-top: 10px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 750px) {
   .hero-wrapper h1 {
     font-size: 2.8rem;
     line-height: 50px;
-    padding-top: 10px;
+    padding-top: 150px;
   }
 }
