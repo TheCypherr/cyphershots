@@ -157,12 +157,13 @@ body {
     margin-top: -10px;
   }
   .related-images {
-    height: 27rem;
+    width: 25rem;
+    height: 28rem;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 550px) {
   .gallery-wrapper {
-    padding: 20px 15px 20px 15px;
+    padding: 50px 15px 50px 15px;
     height: 100%;
   }
   .r-buttons {
@@ -176,7 +177,9 @@ body {
     margin-top: -10px;
   }
   .related-images {
-    width: 25rem;
-    height: 28rem;
+    width: 100%;
+    height: 29rem;
+    text-align: center;
+    align-items: center;
   }
 }
