@@ -43,7 +43,7 @@ const Tizzy = () => {
           </Swiper>
         </div>
         <div className="flex-container2">
-          <h1>Island Block Party ft Bella Shmurda</h1>
+          <h1>Island Block Party ft Tizzy</h1>
           <h3>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
             nesciunt aliquam sapiente corrupti unde ad reprehenderit facere ab,

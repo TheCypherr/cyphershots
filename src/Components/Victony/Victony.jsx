@@ -43,7 +43,7 @@ const Victony = () => {
           </Swiper>
         </div>
         <div className="flex-container2">
-          <h1>Island Block Party ft Bella Shmurda</h1>
+          <h1>Island Block Party ft Victony</h1>
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae non
             quod, repellat animi exercitationem quisquam alias nemo doloribus!
