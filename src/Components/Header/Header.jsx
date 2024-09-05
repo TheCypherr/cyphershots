@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         <div className="icons">
           <div onClick={handleTheme} className="theme-icon-two">
-            {theme.background ? <FaSun size={20} /> : <FaMoon size={20} />}
+            {theme.background ? <FaSun size={20} /> : <FaMoon size={19} />}
           </div>
           <div onClick={toggleMenu} className="icon-menu">
             {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -90,7 +90,7 @@ const Header = () => {
           </Link>
 
           <div onClick={handleTheme} className="theme-icon">
-            {theme.background ? <FaSun size={20} /> : <FaMoon size={20} />}
+            {theme.background ? <FaSun size={20} /> : <FaMoon size={19} />}
           </div>
         </div>
       </div>
