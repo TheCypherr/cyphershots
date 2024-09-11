@@ -28,7 +28,7 @@ body {
   }
   .hero-wrapper {
     padding: 10px 20px 10px 20px;
-    height: 100vh;
+    height: 100%;
   }
   .hero-wrapper h1 {
     padding-top: 200px;
