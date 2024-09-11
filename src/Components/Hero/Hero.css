@@ -8,10 +8,10 @@ body {
 }
 .hero-wrapper {
   padding: 10px 25px 10px 25px;
-  height: 100%;
+  height: 100vh;
 }
 .hero-wrapper h1 {
-  padding-top: 75px;
+  padding-top: 150px;
   padding-bottom: 50px;
   font-size: 4rem;
   line-height: 75px;
