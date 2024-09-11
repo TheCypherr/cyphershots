@@ -7,14 +7,14 @@ body {
   background-color: var(--bg-color);
 }
 .hero-wrapper {
-  padding: 10px 15px 10px 15px;
+  padding: 10px 25px 10px 25px;
   height: 100%;
 }
 .hero-wrapper h1 {
   padding-top: 75px;
   padding-bottom: 50px;
-  font-size: 4.5rem;
-  line-height: 85px;
+  font-size: 4rem;
+  line-height: 75px;
   color: var(--orange-color);
 }
 .hero-wrapper span {
@@ -33,23 +33,27 @@ body {
   .hero-wrapper h1 {
     padding-top: 150px;
     padding-bottom: 70px;
-    font-size: 2.8rem;
-    line-height: 50px;
+    font-size: 2.5rem;
+    line-height: 40px;
     color: var(--orange-color);
+  }
+  span {
+    font-size: 1.5rem;
+    line-height: 30px;
   }
 }
 /* Landscape and iPad View */
 @media (min-width: 600px) and (max-width: 900px) {
   .hero-wrapper h1 {
-    font-size: 2.8rem;
-    line-height: 50px;
+    font-size: 2.4rem;
+    line-height: 45px;
     padding-top: 10px;
   }
 }
 @media (min-width: 750px) and (max-width: 900px) {
   .hero-wrapper h1 {
-    font-size: 2.8rem;
-    line-height: 50px;
+    font-size: 2.4rem;
+    line-height: 45px;
     padding-top: 50px;
   }
 }
