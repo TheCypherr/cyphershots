@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
+import { useScroll } from "../../utils/ScrollContext";
 
 const Header = () => {
+  // imported scrollSection from ScrollContext
+  const { scrollToSection } = useScroll();
   // useState for changing theme
   const [theme, setTheme] = useState({
     background: true,
@@ -16,6 +19,17 @@ const Header = () => {
   // onClick function to handle dropdown menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  // onClick function to close menubar onclick
+  const closeSideBar = () => {
+    setIsOpen(false);
+  };
+
+  // onClick function for footer scroll
+  const handleFooterScroll = (footerKey) => {
+    setIsOpen(false);
+    scrollToSection(footerKey);
   };
 
   // useEffect to prevent scrolling when menu is open
@@ -73,13 +87,25 @@ const Header = () => {
         {isOpen && (
           <div className="h-two-main">
             <div className="h-links-new">
-              <Link className="custom-links-new" to="/">
+              <Link
+                className="custom-links-new"
+                to="/"
+                onClick={() => closeSideBar()}
+              >
                 <h4>Home</h4>
               </Link>
-              <Link className="custom-links-new" to="/about">
+              <Link
+                className="custom-links-new"
+                to="/about"
+                onClick={() => closeSideBar()}
+              >
                 <h4>About</h4>
               </Link>
-              <Link className="custom-links-new" to="/contact">
+              <Link
+                className="custom-links-new"
+                to="/"
+                onClick={() => handleFooterScroll("scrollToFooter")}
+              >
                 <h4>Contact</h4>
               </Link>
               <div onClick={handleTheme} className="theme-icon-two">
@@ -96,7 +122,11 @@ const Header = () => {
           <Link className="custom-links" to="/about">
             <h4>About</h4>
           </Link>
-          <Link className="custom-links" to="/contact">
+          <Link
+            className="custom-links"
+            to="/"
+            onClick={() => handleFooterScroll("scrollToFooter")}
+          >
             <h4>Contact</h4>
           </Link>
 

@@ -17,38 +17,43 @@ import Pocolee from "./Components/Pocolee/Pocolee";
 import Victony from "./Components/Victony/Victony";
 import OouStreet2 from "./Components/OouStreet2/OouStreet2";
 import Tizzy from "./Components/Tizzy/Tizzy";
+import { ScrollProvider } from "./utils/ScrollContext";
+import ScrollToTopButton from "./utils/ScrollToTopBtn";
 
 function App() {
   return (
     <>
       <PictureProvider>
-        <div>
-          <ScrollToTop />
-          <Header />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <HomeGallery />
-                </>
-              }
-            />
-            <Route path="/IbadanDetails/:id" element={<IbadanDetails />} />
-            <Route path="/BlockParty/:id" element={<BlockParty />} />
-            <Route path="/Faraheint/:id" element={<Faraheint />} />
-            <Route path="/Ceci/:id" element={<Ceci />} />
-            <Route path="/FaraheintPlus/:id" element={<FaraheintPlus />} />
-            <Route path="/Bella/:id" element={<Bella />} />
-            <Route path="/OouStreet1/:id" element={<OouStreet1 />} />
-            <Route path="/Pocolee/:id" element={<Pocolee />} />
-            <Route path="/Victony/:id" element={<Victony />} />
-            <Route path="/OouStreet2/:id" element={<OouStreet2 />} />
-            <Route path="/Tizzy/:id" element={<Tizzy />} />
-          </Routes>
-          <Footer />
-        </div>
+        <ScrollProvider>
+          <div>
+            <ScrollToTopButton />
+            <ScrollToTop />
+            <Header />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <HomeGallery />
+                  </>
+                }
+              />
+              <Route path="/IbadanDetails/:id" element={<IbadanDetails />} />
+              <Route path="/BlockParty/:id" element={<BlockParty />} />
+              <Route path="/Faraheint/:id" element={<Faraheint />} />
+              <Route path="/Ceci/:id" element={<Ceci />} />
+              <Route path="/FaraheintPlus/:id" element={<FaraheintPlus />} />
+              <Route path="/Bella/:id" element={<Bella />} />
+              <Route path="/OouStreet1/:id" element={<OouStreet1 />} />
+              <Route path="/Pocolee/:id" element={<Pocolee />} />
+              <Route path="/Victony/:id" element={<Victony />} />
+              <Route path="/OouStreet2/:id" element={<OouStreet2 />} />
+              <Route path="/Tizzy/:id" element={<Tizzy />} />
+            </Routes>
+            <Footer />
+          </div>
+        </ScrollProvider>
       </PictureProvider>
     </>
   );

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Footer.css";
+import { useScroll } from "../../utils/ScrollContext";
 
 const Footer = () => {
+  const targetRef = useRef(null);
+  const { registerRef } = useScroll();
+
+  useEffect(() => {
+    registerRef("scrollToFooter", targetRef.current);
+  }, [registerRef]);
   return (
-    <section className="footer-wrapper">
+    <section className="footer-wrapper" ref={targetRef}>
       <div className="inner-footer">
         <div className="one-side">
           <p>cypherdev.com</p>
